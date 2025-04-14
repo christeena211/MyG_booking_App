@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking System</title>
+</head>
+<body>
+  <h1 style="text-align: center; text-transform: uppercase;">Booking System</h1>
+
+  <div style="display: flex; gap: 20px; align-items: flex-start;">
+
+    <!-- LEFT: FORM SECTION -->
+    <div style="flex: 1; border: 2px solid #000; padding: 10px;">
+      <h2 style="text-align: center; text-transform: uppercase;">Booking Form</h2>
+      <form id="bookingForm">
+        <label>Name:</label><br />
+        <input type="text" id="name" required><br /><br />
+
+        <label>Email:</label><br />
+        <input type="email" id="email" required><br /><br />
+
+        <label>Date:</label><br />
+        <input type="date" id="date" required><br /><br />
+
+        <label>Time:</label><br />
+        <input type="time" id="time" required><br /><br />
+
+        <label>Service:</label><br />
+        <input type="text" id="service" required><br /><br />
+
+        <button type="submit">Book</button>
+      </form>
+    </div>
+
+    <!-- RIGHT: BOOKINGS SECTION -->
+    <div style="flex: 1; border: 2px solid #000; padding: 10px;">
+      <h2 style="text-align: center; text-transform: uppercase;">All Bookings</h2>
+      <ul id="bookingList" style="list-style-type: none; padding: 0;"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
